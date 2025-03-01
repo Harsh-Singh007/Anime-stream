@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+header h1 {
+    color: cyan;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+
+.featured {
+    margin: 20px 0;
+}
+
+.featured-anime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.featured-anime img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.anime-info {
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+}
+
+.watch-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: cyan;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.watch-btn:hover {
+    background: lightblue;
+}
+
+
+.anime-grid {
+    padding: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.anime-card {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.anime-card:hover{
+    transform: scale(1.1);
+    color: cyan;
+}
+.anime-card a{
+    text-decoration: none;
+    color: white;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.anime-card h3 {
+    margin-top: 10px;
+}
+
+
+footer {
+    background: #222;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width:500px) {
+
+    .featured-anime img {
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+}
+header {
+   
+    height: 60px;
+}
+header h1 {
+   
+    font-size: 20px;
+}
+
+nav ul li a {
+    font-size: 12px;
+}
+}
